@@ -1,6 +1,7 @@
 # 🚀 AI News Summarizer and LinkedIn Post Generator
 
 ![Demo](demo.gif)
+(_See video in high quality [here](https://drive.google.com/file/d/1EOMhWqnrcM02sMud_hfpQEoGqp9UQPJr/).)_
 
 This project creates an AI agent that fetches the latest AI news, summarizes it, and generates a LinkedIn post about the most relevant news item. It is built using the **smolagents** framework from Hugging Face, a minimalist AI agent library designed for simplicity and efficiency.
 
