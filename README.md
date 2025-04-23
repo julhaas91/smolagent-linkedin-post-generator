@@ -1,5 +1,7 @@
 # 🚀 AI News Summarizer and LinkedIn Post Generator
 
+![Demo](demo.gif)
+
 This project creates an AI agent that fetches the latest AI news, summarizes it, and generates a LinkedIn post about the most relevant news item. It is built using the **smolagents** framework from Hugging Face, a minimalist AI agent library designed for simplicity and efficiency.
 
 ## ✨ Features
@@ -27,21 +29,22 @@ cd ai-news-summarizer
 2. Install the required dependencies:
 
 ```bash
-uv sync --frozen --no-cache
+./taskfile.sh reset_venv_local
 ```
 
-3. Set up your OpenAI API key as an environment variable:
-
-```bash
-export OPENAI_API_KEY='your-api-key-here'
-```
+3. Set up your environment variables:
+   - Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   - Edit `.env` and replace the placeholder API key with your actual OpenAI API key
 
 ## ▶️ Usage
 
 Run the main script:
 
 ```bash
-python main.py
+./taskfile.sh run
 ```
 
 The script will fetch the latest AI news, summarize it, and generate a LinkedIn post.
